@@ -1,0 +1,43 @@
+
+### 4. .gitignore
+```gitignore
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+venv/
+env/
+env
+pip-selfcheck.json
+
+# Audio files
+*.wav
+*.mp3
+*.ogg
+*.flac
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and databases
+*.log
+*.sqlite
+
+# Local development
+.env
+.env.local
+
+# Streamlit
+.streamlit/
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Output directory
+/output_audios/
+/input_samples/
