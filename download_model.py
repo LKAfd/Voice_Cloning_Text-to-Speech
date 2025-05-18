@@ -1,5 +1,14 @@
-from TTS.api import TTS
+from TTS.utils.manage import ModelManager
+import os
 
-print("Downloading YourTTS model... (This will take 20-40 minutes)")
-TTS(model_name="tts_models/multilingual/multi-dataset/your_tts", progress_bar=True)
-print("\nModel downloaded successfully!")
+def download_model():
+    """Robust model downloader for TTS v0.20.x"""
+    print("🚚 Downloading YourTTS Model...")
+    
+    manager = ModelManager()
+    model_path, config_path, model_item = manager.download_model("tts_models/multilingual/multi-dataset/your_tts")
+    
+    print(f"✅ Model downloaded to: {model_path}")
+
+if __name__ == "__main__":
+    download_model()
