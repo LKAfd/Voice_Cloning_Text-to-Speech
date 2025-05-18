@@ -31,8 +31,6 @@ pip-selfcheck.json
 .env
 .env.local
 
-# Streamlit
-.streamlit/
 
 # OS generated
 .DS_Store

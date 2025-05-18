@@ -1,0 +1,5 @@
+[server]
+maxUploadSize = 500  # Allow 500MB files
+port = 8501
+enableCORS = false
+enableXsrfProtection = false
